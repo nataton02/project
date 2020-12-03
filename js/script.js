@@ -55,7 +55,7 @@ console.log(family.children);
 */
 
 //-----------------------13. Условия-----------------------------------------
-if (4 == 9) {
+/*if (4 == 9) {
   console.log('Ok!');
 } else {
   console.log('Error');
@@ -86,3 +86,37 @@ switch (num2) {
     console.log('Не в этот раз!');
     break;
 }
+*/
+
+/*
+//---------------------------------14. Циклы -----------------------------------
+let num = 50;          // 1 option
+while (num <= 55) {
+  console.log(num);
+  num++;
+}
+
+let num2 = 60;      // 2 option
+do {
+  console.log(num2);
+  num2++;
+}
+while (num2 <= 65);
+
+for (let i = 1; i < 8; i++) {
+  console.log(num);
+}
+
+let num3 = 100;
+for (let i = 2; i < 8; i++) {
+  console.log(num3);
+  num3++;
+}
+
+for (let i = 1; i < 10; i++) {
+  if (i == 6) {
+    break;
+  }
+  console.log(i);
+}
+*/

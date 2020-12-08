@@ -188,3 +188,53 @@ for (let i = 1; i < 10; i++) {
   console.log(i);
 }
 */
+
+
+//---------------16. Функции, стрелочные функции (ES6)------------------------------
+/*
+function schowFirstMessage() {
+  console.log('Hello world!');
+}
+schowFirstMessage();
+
+let num = 20;                    // глобальная переменная
+function schowFirstMessage2(text) {
+  console.log(text);
+  num = 10;                      // изменяем значение глобальной переменной
+}
+schowFirstMessage2('Hello World!');
+console.log(num);
+
+function schowFirstMessage3(text) {
+  console.log(text);
+  let num = 10;                 // локальная переменная   
+}
+console.log(num);
+
+function calc(a, b) {
+  return (a + b);              //заканчивает функцию и возвращает результат наружу
+}
+console.log(calc(3, 4));
+console.log(calc(6, 5));
+console.log(calc(10, 8));
+
+function ret() {              // function declaration
+  let num = 50;
+  return num;
+}
+const anotherNum = ret();
+console.log(anotherNum);
+
+const logger = function() {    // function expression
+  console.log('Hello!');
+};
+logger();
+
+const calc2 = (a, b) => a + b;   //стрелочная функция 
+
+const calc3 = (a, b) => {     //стрелочная функция с множеством дейсвий
+  console.log('1');
+  return a + b;
+};
+*/
+

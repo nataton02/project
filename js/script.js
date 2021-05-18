@@ -107,7 +107,7 @@ for (let i = 0; i < 2; i++) {
 console.log(personalMovieDB);
 */
 
-//------------------- Практика, ч. 3. Используем функции ------------------------
+//-------------------18. Практика, ч. 3. Используем функции ------------------------
 
 /*
 1. Первую часть задания повторить по уроку
@@ -118,7 +118,7 @@ console.log(personalMovieDB);
 записывается в массив данных genres.
 P.S. Функции вызывать не обязательно
 */
-
+/*
 let numberOfFilms; 
 
 function start() {
@@ -127,6 +127,7 @@ function start() {
     numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
   } 
 }
+
 start();
 
 const personalMovieDB = {
@@ -151,8 +152,8 @@ function detectPersonalLevel() {
     alert('Произошла ошибка');
   }
 }
-detectPersonalLevel();
 
+detectPersonalLevel();
 
 
 function rememberMyFilms() {
@@ -170,8 +171,32 @@ function rememberMyFilms() {
     }
   }
 }
-rememberMyFilms();
-console.log(personalMovieDB);
 
+rememberMyFilms();
+
+
+function schowMyDB (hidden) {
+  if (!hidden) {            //hidden значит скрыт
+    console.log(personalMovieDB);// если не скрыт, то обьект показывается
+  } 
+}
+
+schowMyDB(personalMovieDB.privat);
+
+
+function writeYourGenres () {
+  for (let i = 1; i <= 3; i++) {
+    const genre = prompt(`Ваш любимый жанр под номером ${i}`, '');
+    if (genre != null && genre != '' && isNaN(genre)) {
+      personalMovieDB.genres[i-1] = genre;
+    } else {
+      console.log('Error!');
+      i--;
+    }
+  }
+}
+
+writeYourGenres();
+*/
 
 

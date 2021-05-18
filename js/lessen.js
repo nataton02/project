@@ -269,3 +269,17 @@ const test = "12.2px";
 console.log(parseInt(test));  //parseInt() - превращает строку в целое окрегленное число
 console.log(parseFloat(test));//parseFloat - превращаеи строку в число с десятичным значением
 */
+
+//------------------------19. Callback-функции----------------------------
+/*
+function learnJs(lang, callback) {
+  console.log(`Я учу ${lang}!`);
+  callback();
+}
+
+function done() {
+  console.log('Я прошел этот урок!');
+}
+
+learnJs('Javascript', done);
+*/

@@ -283,3 +283,48 @@ function done() {
 
 learnJs('Javascript', done);
 */
+
+
+//--------------------20. Обьекты, деструктуризация обькетов----------------
+
+/*
+const options = {
+  name: 'test',
+  width: 1024,
+  height: 1024,
+  colors: {
+    border: 'black',
+    bg: 'red'
+  },
+  makeTest: function() {     //создаем функцию (метод) внутри обьекта
+    console.log('Test');
+  }
+};
+console.log(options.name);
+options.makeTest();        // запускаем функцию (метод)
+
+//delete options.name;      //удаляет что-то
+//console.log(options);
+
+let counter = 0;
+
+for (let key in options) {
+  if (typeof(options[key]) === 'object') {
+    for (let i in options[key]) {
+      console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+      counter++;
+    }
+  } else {
+    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+    counter++;
+  } 
+}
+console.log(counter);
+
+console.log(Object.keys(options)); // создает массив из ключей обьекта
+console.log(Object.keys(options).length); //определяем кол-во элементов в обьекте
+
+const {border, bg} = options.colors;   //деструктуризация обьекта
+console.log(border);
+*/
+

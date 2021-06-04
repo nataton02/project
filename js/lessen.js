@@ -328,3 +328,47 @@ const {border, bg} = options.colors;   //деструктуризация обь
 console.log(border);
 */
 
+
+//----------------------21. Массивы и псевдомассивы---------------------------
+/*
+const arr = [1, 2, 3, 6, 8];
+
+arr.pop();  //удаляет последний элемент массива
+console.log(arr);
+
+arr.push(10); //добавляет элемент в конец массива
+console.log(arr);
+
+for (let i = 0; i < arr.length; i++) {  //перебираем элементы массива
+  console.log(arr[i]);
+}
+
+for (let value of arr) {     //перебираем элементы массива 2 способ
+  console.log(value);
+}
+
+arr.forEach(function(item, i, arr) {  //перебирает гибко элементы массива
+  console.log(`${i}: ${item} внутри массива ${arr}`);
+});
+
+const str = prompt("", "");
+const product = str.split(", "); //преобразовывает строку в массив
+
+const product2 = ["dfd", "azjvg", "fdfdf", "yigv"];
+console.log(product2.join('; ')); //преобразовываем массив в строку
+
+product2.sort();     // сортирует в алфавитном порядке
+console.log(product2);
+
+const arr2 = [3, 10, 28, 2, 8];
+function compareNum(a, b) {
+  return a - b;
+}
+arr2.sort(compareNum);
+console.log(arr2);
+*/
+
+
+
+
+
